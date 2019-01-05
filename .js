@@ -1,14 +1,13 @@
 let Person = function(firstAndLast) {
   // Copy the full name that was passed as a parameter
     let fullName = firstAndLast;
- //Create six methods needed and return what is asked for
+  // Create six methods needed and return what is asked for
     this.getFirstName = function(){
         return fullName.split(' ')[0];
     }
     this.getLastName = function(){
         return fullName.split(' ')[1];
     }
-
     this.getFullName = function(){
         return fullName;
     }
