@@ -11,14 +11,14 @@ let Person = function(firstAndLast) {
     this.getFullName = function(){
         return fullName;
     }
-    this.setFirstName = function(name){
-        fullName = name + " " + fullName.split(' ')[1];
+    this.setFirstName = function(first){
+        fullName = first + " " + fullName.split(' ')[1];
     }
-    this.setLastName = function(name){
-        fullName = fullName.split(' ')[0] + " " + name;
+    this.setLastName = function(last){
+        fullName = fullName.split(' ')[0] + " " + last;
     }
-    this.setFullName = function(name){
-        fullName = name;
+    this.setFullName = function(firstAndLast){
+        fullName = firstAndLast;
     }
 }
 var bob = new Person('Bob Ross');
