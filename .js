@@ -22,9 +22,10 @@ let Person = function(firstAndLast) {
     }
 }
 var bob = new Person('Bob Ross');
-bob.getFullName();
 
-
+bob.getFirstName(); // return "Bob"
+bob.getLastName(); // return "Ross"
+bob.getFullName(); // return "Bob Ross"
 
 
 // Retrieved from https://guide.freecodecamp.org/certifications/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/make-a-person/
